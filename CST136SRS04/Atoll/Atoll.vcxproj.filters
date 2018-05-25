@@ -24,10 +24,7 @@
     <ClInclude Include="Range.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Angle.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Location.h">
+    <ClInclude Include="GPS.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -38,13 +35,10 @@
     <ClCompile Include="Range.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Angle.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Location.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GPS.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

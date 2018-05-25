@@ -1,4 +1,6 @@
 #pragma once
+#include <string>
+
 namespace GPS
 {
 	template<int min, int max>
@@ -47,3 +49,18 @@ namespace GPS
 		Longitude(const Cardinal cardinal, const degree_type degree, const minute_type minute, const second_type second);
 	};
 }
+
+namespace GPS
+{
+	class Location
+	{
+	private:
+		const std::string name_;
+		const Latitude latitude_;
+		const Longitude longitude_;
+
+	public:
+		Location(const std::string name, const Latitude latitude, const Longitude longitude);
+	};
+}
+
