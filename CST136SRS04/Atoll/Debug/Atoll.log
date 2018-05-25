@@ -1,0 +1,4 @@
+﻿  stdafx.cpp
+  Atoll.cpp
+  Atoll.vcxproj -> C:\Users\michalsenc\CST136\CST136SRS04\CST136SRS04\Debug\Atoll.exe
+c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\atoll.cpp(7): warning C26440: Function 'main' can be declared 'noexcept' (f.6: http://go.microsoft.com/fwlink/?linkid=853927).

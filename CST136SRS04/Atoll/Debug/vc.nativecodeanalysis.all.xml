@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\</FILEPATH>
+      <FILENAME>atoll.cpp</FILENAME>
+      <LINE>7</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'main' can be declared 'noexcept' (f.6: http://go.microsoft.com/fwlink/?linkid=853927).</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT></DEFECTS>

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Atoll", "Atoll\Atoll.vcxproj", "{27F7EFD5-2D54-40CD-B294-5C63FD83F706}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{773DAC0F-C25E-440C-BCB2-7F9D602EC624}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+		..\REPORT.md = ..\REPORT.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27F7EFD5-2D54-40CD-B294-5C63FD83F706}.Debug|x64.ActiveCfg = Debug|x64
+		{27F7EFD5-2D54-40CD-B294-5C63FD83F706}.Debug|x64.Build.0 = Debug|x64
+		{27F7EFD5-2D54-40CD-B294-5C63FD83F706}.Debug|x86.ActiveCfg = Debug|Win32
+		{27F7EFD5-2D54-40CD-B294-5C63FD83F706}.Debug|x86.Build.0 = Debug|Win32
+		{27F7EFD5-2D54-40CD-B294-5C63FD83F706}.Release|x64.ActiveCfg = Release|x64
+		{27F7EFD5-2D54-40CD-B294-5C63FD83F706}.Release|x64.Build.0 = Release|x64
+		{27F7EFD5-2D54-40CD-B294-5C63FD83F706}.Release|x86.ActiveCfg = Release|Win32
+		{27F7EFD5-2D54-40CD-B294-5C63FD83F706}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {83CD3D90-2C78-4C80-AEC2-D1A11B4A3402}
+	EndGlobalSection
+EndGlobal
