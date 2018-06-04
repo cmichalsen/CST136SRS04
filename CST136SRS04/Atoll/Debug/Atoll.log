@@ -1,9 +1,11 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppClean.targets(76,5): warning : The process cannot access the file 'c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\debug\atoll.pchast' because it is being used by another process.
-  stdafx.cpp
+﻿  stdafx.cpp
   GPS.cpp
   main.cpp
   Range.cpp
   Compiling...
   Generating Code...
-main.obj : error LNK2019: unresolved external symbol "public: __thiscall GPS::Location::Location(void)" (??0Location@GPS@@QAE@XZ) referenced in function _main
-C:\Users\michalsenc\CST136\CST136SRS04\CST136SRS04\Debug\Atoll.exe : fatal error LNK1120: 1 unresolved externals
+  Atoll.vcxproj -> C:\Users\michalsenc\CST136\CST136SRS04\CST136SRS04\Debug\Atoll.exe
+c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\gps.h(29): warning C26440: Function 'GPS::Angle<-180,180>::Angle<-180,180>' can be declared 'noexcept' (f.6: http://go.microsoft.com/fwlink/?linkid=853927).
+c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\main.cpp(10): warning C26440: Function 'main' can be declared 'noexcept' (f.6: http://go.microsoft.com/fwlink/?linkid=853927).
+c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\main.cpp(13): warning C26496: The variable 'island' is assigned only once, mark it as const (con.4: https://go.microsoft.com/fwlink/p/?LinkID=784969).
+c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\range.h(11): warning C26440: Function 'Range<int,-180,180>::Range<int,-180,180>' can be declared 'noexcept' (f.6: http://go.microsoft.com/fwlink/?linkid=853927).

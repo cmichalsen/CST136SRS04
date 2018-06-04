@@ -25,24 +25,19 @@ namespace GPS
 		const second_type second_;
 
 	public:
-		Angle();
 
 		Angle(const degree_type degree, const minute_type minute, const second_type second)
 			:degree_(degree), minute_(minute), second_(second)
 		{
 		}
 	};
-//}
-//
-//namespace GPS
-//{
+
 	class Latitude : public Angle<-89, 90>
 	{
 
 	public:
 		enum class Cardinal { S = -1, N = +1 };
 
-		Latitude();
 
 		Latitude(const Cardinal cardinal, const degree_type degree, const minute_type minute, const second_type second)
 			:Angle(degree, minute, second)
@@ -51,26 +46,18 @@ namespace GPS
 
 
 	};
-//}
 
-//namespace GPS
-//{
 	class Longitude : public Angle<-180, 180>
 	{
 	public:
 		enum class Cardinal { W = -1, E = +1 };
-
-		Longitude();
 
 		Longitude(const Cardinal cardinal, const degree_type degree, const minute_type minute, const second_type second)
 			:Angle(degree, minute, second)
 		{
 		}
 	};
-//}
-//
-//namespace GPS
-//{
+
 	class Location
 	{
 	private:
@@ -79,7 +66,6 @@ namespace GPS
 		const Longitude longitude_;
 
 	public:
-		Location();
 
 		Location(const std::string name, const Latitude latitude, const Longitude longitude)
 			:name_( name ), latitude_( latitude ), longitude_(longitude){}
