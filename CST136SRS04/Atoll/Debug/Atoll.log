@@ -1,9 +1,9 @@
-﻿  stdafx.cpp
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppClean.targets(76,5): warning : The process cannot access the file 'c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\debug\atoll.pchast' because it is being used by another process.
+  stdafx.cpp
   GPS.cpp
   main.cpp
   Range.cpp
   Compiling...
   Generating Code...
 main.obj : error LNK2019: unresolved external symbol "public: __thiscall GPS::Location::Location(void)" (??0Location@GPS@@QAE@XZ) referenced in function _main
-main.obj : error LNK2019: unresolved external symbol "public: __thiscall GPS::Location::Location(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (??0Location@GPS@@QAE@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) referenced in function _main
-C:\Users\michalsenc\CST136\CST136SRS04\CST136SRS04\Debug\Atoll.exe : fatal error LNK1120: 2 unresolved externals
+C:\Users\michalsenc\CST136\CST136SRS04\CST136SRS04\Debug\Atoll.exe : fatal error LNK1120: 1 unresolved externals

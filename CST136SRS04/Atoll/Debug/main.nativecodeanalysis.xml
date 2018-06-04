@@ -4,28 +4,98 @@
     <SFA>
       <FILEPATH>c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\</FILEPATH>
       <FILENAME>main.cpp</FILENAME>
-      <LINE>18</LINE>
+      <LINE>10</LINE>
       <COLUMN>4</COLUMN>
     </SFA>
     <DEFECTCODE>26440</DEFECTCODE>
     <DESCRIPTION>Function 'main' can be declared 'noexcept' (f.6: http://go.microsoft.com/fwlink/?linkid=853927).</DESCRIPTION>
     <FUNCTION>main</FUNCTION>
     <DECORATED>main</DECORATED>
-    <FUNCLINE>18</FUNCLINE>
+    <FUNCLINE>10</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\</FILEPATH>
       <FILENAME>main.cpp</FILENAME>
-      <LINE>20</LINE>
+      <LINE>13</LINE>
       <COLUMN>31</COLUMN>
     </SFA>
     <DEFECTCODE>26496</DEFECTCODE>
     <DESCRIPTION>The variable 'island' is assigned only once, mark it as const (con.4: https://go.microsoft.com/fwlink/p/?LinkID=784969).</DESCRIPTION>
     <FUNCTION>main</FUNCTION>
     <DECORATED>main</DECORATED>
-    <FUNCLINE>18</FUNCLINE>
+    <FUNCLINE>10</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\</FILEPATH>
+      <FILENAME>range.h</FILENAME>
+      <LINE>11</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'Range&lt;int,-180,180&gt;::Range&lt;int,-180,180&gt;' can be declared 'noexcept' (f.6: http://go.microsoft.com/fwlink/?linkid=853927).</DESCRIPTION>
+    <FUNCTION>Range&lt;int,-180,180&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$Range@H$0?LE@$0LE@@@QAE@H@Z</DECORATED>
+    <FUNCLINE>11</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\</FILEPATH>
+      <FILENAME>gps.h</FILENAME>
+      <LINE>30</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'GPS::Angle&lt;-180,180&gt;::Angle&lt;-180,180&gt;' can be declared 'noexcept' (f.6: http://go.microsoft.com/fwlink/?linkid=853927).</DESCRIPTION>
+    <FUNCTION>GPS::Angle&lt;-180,180&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$Angle@$0?LE@$0LE@@GPS@@QAE@V?$Range@H$0?LE@$0LE@@@V?$Range@I$0A@$0DM@@@1@Z</DECORATED>
+    <FUNCLINE>30</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\</FILEPATH>
+      <FILENAME>range.h</FILENAME>
+      <LINE>11</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'Range&lt;int,-89,90&gt;::Range&lt;int,-89,90&gt;' can be declared 'noexcept' (f.6: http://go.microsoft.com/fwlink/?linkid=853927).</DESCRIPTION>
+    <FUNCTION>Range&lt;int,-89,90&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$Range@H$0?FJ@$0FK@@@QAE@H@Z</DECORATED>
+    <FUNCLINE>11</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\</FILEPATH>
+      <FILENAME>gps.h</FILENAME>
+      <LINE>30</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'GPS::Angle&lt;-89,90&gt;::Angle&lt;-89,90&gt;' can be declared 'noexcept' (f.6: http://go.microsoft.com/fwlink/?linkid=853927).</DESCRIPTION>
+    <FUNCTION>GPS::Angle&lt;-89,90&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$Angle@$0?FJ@$0FK@@GPS@@QAE@V?$Range@H$0?FJ@$0FK@@@V?$Range@I$0A@$0DM@@@1@Z</DECORATED>
+    <FUNCLINE>30</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\</FILEPATH>
+      <FILENAME>range.h</FILENAME>
+      <LINE>11</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'Range&lt;unsigned int,0,60&gt;::Range&lt;unsigned int,0,60&gt;' can be declared 'noexcept' (f.6: http://go.microsoft.com/fwlink/?linkid=853927).</DESCRIPTION>
+    <FUNCTION>Range&lt;unsigned int,0,60&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$Range@I$0A@$0DM@@@QAE@I@Z</DECORATED>
+    <FUNCLINE>11</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
 </DEFECTS>

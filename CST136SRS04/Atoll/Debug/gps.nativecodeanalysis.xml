@@ -1,2 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<DEFECTS></DEFECTS>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\</FILEPATH>
+      <FILENAME>gps.h</FILENAME>
+      <LINE>30</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'GPS::Angle&lt;-180,180&gt;::Angle&lt;-180,180&gt;' can be declared 'noexcept' (f.6: http://go.microsoft.com/fwlink/?linkid=853927).</DESCRIPTION>
+    <FUNCTION>GPS::Angle&lt;-180,180&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$Angle@$0?LE@$0LE@@GPS@@QAE@V?$Range@H$0?LE@$0LE@@@V?$Range@I$0A@$0DM@@@1@Z</DECORATED>
+    <FUNCLINE>30</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\</FILEPATH>
+      <FILENAME>gps.h</FILENAME>
+      <LINE>30</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'GPS::Angle&lt;-89,90&gt;::Angle&lt;-89,90&gt;' can be declared 'noexcept' (f.6: http://go.microsoft.com/fwlink/?linkid=853927).</DESCRIPTION>
+    <FUNCTION>GPS::Angle&lt;-89,90&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$Angle@$0?FJ@$0FK@@GPS@@QAE@V?$Range@H$0?FJ@$0FK@@@V?$Range@I$0A@$0DM@@@1@Z</DECORATED>
+    <FUNCLINE>30</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

@@ -8,5 +8,8 @@ private:
 	value_type value_;
 
 public:
-	Range(const value_type value);
+	Range(const value_type value)
+		:value_(value)
+	{
+	}
 };
