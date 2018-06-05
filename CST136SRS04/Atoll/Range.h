@@ -8,8 +8,13 @@ private:
 	value_type value_;
 
 public:
-	Range(const value_type value)
+	Range(const value_type value) noexcept
 		:value_(value)
 	{
+	}
+
+	double getValue() const noexcept
+	{
+		return value_;
 	}
 };

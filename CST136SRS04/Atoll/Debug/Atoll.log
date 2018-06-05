@@ -4,8 +4,6 @@
   Range.cpp
   Compiling...
   Generating Code...
-  Atoll.vcxproj -> C:\Users\michalsenc\CST136\CST136SRS04\CST136SRS04\Debug\Atoll.exe
-c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\gps.h(29): warning C26440: Function 'GPS::Angle<-180,180>::Angle<-180,180>' can be declared 'noexcept' (f.6: http://go.microsoft.com/fwlink/?linkid=853927).
-c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\main.cpp(10): warning C26440: Function 'main' can be declared 'noexcept' (f.6: http://go.microsoft.com/fwlink/?linkid=853927).
-c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\main.cpp(13): warning C26496: The variable 'island' is assigned only once, mark it as const (con.4: https://go.microsoft.com/fwlink/p/?LinkID=784969).
-c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\range.h(11): warning C26440: Function 'Range<int,-180,180>::Range<int,-180,180>' can be declared 'noexcept' (f.6: http://go.microsoft.com/fwlink/?linkid=853927).
+  Atoll.vcxproj -> C:\Users\Family\CST136\CST136SRS04\CST136SRS04\Debug\Atoll.exe
+c:\users\family\cst136\cst136srs04\cst136srs04\atoll\gps.h(94): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2: https://go.microsoft.com/fwlink/?linkid=864598).
+c:\users\family\cst136\cst136srs04\cst136srs04\atoll\gps.h(84): warning C26440: Function 'GPS::Location::getDistance' can be declared 'noexcept' (f.6: http://go.microsoft.com/fwlink/?linkid=853927).

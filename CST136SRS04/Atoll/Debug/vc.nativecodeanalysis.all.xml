@@ -1,53 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
     <SFA>
-      <FILEPATH>c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\</FILEPATH>
+      <FILEPATH>c:\users\family\cst136\cst136srs04\cst136srs04\atoll\</FILEPATH>
       <FILENAME>gps.h</FILENAME>
-      <LINE>29</LINE>
-      <COLUMN>2</COLUMN>
+      <LINE>94</LINE>
+      <COLUMN>27</COLUMN>
     </SFA>
-    <DEFECTCODE>26440</DEFECTCODE>
-    <DESCRIPTION>Function 'GPS::Angle&lt;-180,180&gt;::Angle&lt;-180,180&gt;' can be declared 'noexcept' (f.6: http://go.microsoft.com/fwlink/?linkid=853927).</DESCRIPTION>
-    <FUNCTION>GPS::Angle&lt;-180,180&gt;::{ctor}</FUNCTION>
-    <DECORATED>??0?$Angle@$0?LE@$0LE@@GPS@@QAE@V?$Range@H$0?LE@$0LE@@@V?$Range@I$0A@$0DM@@@1@Z</DECORATED>
-    <FUNCLINE>29</FUNCLINE>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2: https://go.microsoft.com/fwlink/?linkid=864598).</DESCRIPTION>
+    <FUNCTION>GPS::Location::getDistance</FUNCTION>
+    <DECORATED>?getDistance@Location@GPS@@QBENQBV12@@Z</DECORATED>
+    <FUNCLINE>84</FUNCLINE>
     <PATH></PATH>
   </DEFECT><DEFECT>
     <SFA>
-      <FILEPATH>c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\</FILEPATH>
-      <FILENAME>main.cpp</FILENAME>
-      <LINE>10</LINE>
-      <COLUMN>4</COLUMN>
+      <FILEPATH>c:\users\family\cst136\cst136srs04\cst136srs04\atoll\</FILEPATH>
+      <FILENAME>gps.h</FILENAME>
+      <LINE>84</LINE>
+      <COLUMN>9</COLUMN>
     </SFA>
     <DEFECTCODE>26440</DEFECTCODE>
-    <DESCRIPTION>Function 'main' can be declared 'noexcept' (f.6: http://go.microsoft.com/fwlink/?linkid=853927).</DESCRIPTION>
-    <FUNCTION>main</FUNCTION>
-    <DECORATED>main</DECORATED>
-    <FUNCLINE>10</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT><DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\</FILEPATH>
-      <FILENAME>main.cpp</FILENAME>
-      <LINE>13</LINE>
-      <COLUMN>30</COLUMN>
-    </SFA>
-    <DEFECTCODE>26496</DEFECTCODE>
-    <DESCRIPTION>The variable 'island' is assigned only once, mark it as const (con.4: https://go.microsoft.com/fwlink/p/?LinkID=784969).</DESCRIPTION>
-    <FUNCTION>main</FUNCTION>
-    <DECORATED>main</DECORATED>
-    <FUNCLINE>10</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT><DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\</FILEPATH>
-      <FILENAME>range.h</FILENAME>
-      <LINE>11</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26440</DEFECTCODE>
-    <DESCRIPTION>Function 'Range&lt;int,-180,180&gt;::Range&lt;int,-180,180&gt;' can be declared 'noexcept' (f.6: http://go.microsoft.com/fwlink/?linkid=853927).</DESCRIPTION>
-    <FUNCTION>Range&lt;int,-180,180&gt;::{ctor}</FUNCTION>
-    <DECORATED>??0?$Range@H$0?LE@$0LE@@@QAE@H@Z</DECORATED>
-    <FUNCLINE>11</FUNCLINE>
+    <DESCRIPTION>Function 'GPS::Location::getDistance' can be declared 'noexcept' (f.6: http://go.microsoft.com/fwlink/?linkid=853927).</DESCRIPTION>
+    <FUNCTION>GPS::Location::getDistance</FUNCTION>
+    <DECORATED>?getDistance@Location@GPS@@QBENQBV12@@Z</DECORATED>
+    <FUNCLINE>84</FUNCLINE>
     <PATH></PATH>
   </DEFECT></DEFECTS>
