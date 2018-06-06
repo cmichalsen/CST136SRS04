@@ -31,39 +31,73 @@ namespace GPS
 		
 		double getRadian() const noexcept
 		{
+			//const auto minutes{ minute_.getValue() };
+			//const auto seconds{ second_.getValue() };
+			//const auto degrees{ degree_.getValue() };
+			//const auto degreeSum{ degrees + (minutes / 60) + (seconds / 3600) };
+			const auto degrees{ getDegrees() };
+			const auto pi{ 3.14 };
+			return (degrees * pi) / 180 ;
+		}
+
+		double getDegrees() const noexcept
+		{
 			const auto minutes{ minute_.getValue() };
 			const auto seconds{ second_.getValue() };
 			const auto degrees{ degree_.getValue() };
 			const auto degreeSum{ degrees + (minutes / 60) + (seconds / 3600) };
-			const auto pi{ 3.14 };
-			return (degreeSum * pi) / 180 ;
+			return degreeSum;
 		}
+
+
+
 	};
 
 	class Latitude : public Angle<-89, 90>
 	{
 	private:
 		double radian{ 0 };
+		double degrees{ 0 };
+
 
 	public:
 		enum class Cardinal { S = -1, N = +1 };
 
 
 		Latitude(const Cardinal cardinal, const degree_type degree, const minute_type minute, const second_type second) noexcept
-			:Angle(degree, minute, second), radian(this->getRadian()){}
+			:Angle(convertPolarity(cardinal, degree), minute, second), radian(this->getRadian()), degrees(this->getDegrees()){}
 		
+		double getDegree() const
+		{
+			return degrees;
+		}
+
+		static int convertPolarity(Cardinal cardinal, degree_type degree) noexcept
+		{
+			return degree * static_cast<int>(cardinal);
+		}
 	};
 
 	class Longitude : public Angle<-180, 180>
 	{
 	private:
 		double radian{ 0 };
+		double degrees{ 0 };
 	public:
 		enum class Cardinal { W = -1, E = +1 };
 
 		Longitude(const Cardinal cardinal, const degree_type degree, const minute_type minute, const second_type second) noexcept
-			:Angle(degree, minute, second), radian(this->getRadian()) {}
-		
+			:Angle(convertPolarity(cardinal, degree), minute, second), radian(this->getRadian()), degrees(this->getDegrees()){}
+
+		static int convertPolarity(Cardinal cardinal, degree_type degree) noexcept
+		{
+			return degree * static_cast<int>(cardinal);
+		}
+
+		int operator <(const Longitude* const longitude2) const
+		{
+			return this->getDegrees() < longitude2->getDegrees();
+		}
 	};
 
 	class Location

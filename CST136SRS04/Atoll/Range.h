@@ -13,6 +13,11 @@ public:
 	{
 	}
 
+	value_type operator *(const value_type value) const noexcept
+	{
+		return this->value_ * value;
+	}
+
 	double getValue() const noexcept
 	{
 		return value_;
