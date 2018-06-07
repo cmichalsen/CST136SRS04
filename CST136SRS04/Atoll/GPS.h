@@ -31,10 +31,6 @@ namespace GPS
 		
 		double getRadian() const noexcept
 		{
-			//const auto minutes{ minute_.getValue() };
-			//const auto seconds{ second_.getValue() };
-			//const auto degrees{ degree_.getValue() };
-			//const auto degreeSum{ degrees + (minutes / 60) + (seconds / 3600) };
 			const auto degrees{ getDegrees() };
 			const auto pi{ 3.14 };
 			return (degrees * pi) / 180 ;
@@ -57,20 +53,14 @@ namespace GPS
 	{
 	private:
 		double radian{ 0 };
-		double degrees{ 0 };
 
 
 	public:
 		enum class Cardinal { S = -1, N = +1 };
 
 
-		Latitude(const Cardinal cardinal, const degree_type degree, const minute_type minute, const second_type second) noexcept
-			:Angle(convertPolarity(cardinal, degree), minute, second), radian(this->getRadian()), degrees(this->getDegrees()){}
-		
-		double getDegree() const
-		{
-			return degrees;
-		}
+		Latitude(const Cardinal cardinal, const degree_type degree, const minute_type minute,
+		         const second_type second) noexcept;
 
 		static int convertPolarity(Cardinal cardinal, degree_type degree) noexcept
 		{
@@ -82,19 +72,19 @@ namespace GPS
 	{
 	private:
 		double radian{ 0 };
-		double degrees{ 0 };
+
 	public:
 		enum class Cardinal { W = -1, E = +1 };
 
-		Longitude(const Cardinal cardinal, const degree_type degree, const minute_type minute, const second_type second) noexcept
-			:Angle(convertPolarity(cardinal, degree), minute, second), radian(this->getRadian()), degrees(this->getDegrees()){}
+		Longitude(const Cardinal cardinal, const degree_type degree, const minute_type minute,
+		          const second_type second) noexcept;
 
 		static int convertPolarity(Cardinal cardinal, degree_type degree) noexcept
 		{
 			return degree * static_cast<int>(cardinal);
 		}
 
-		int operator <(const Longitude* const longitude2) const
+		bool operator <(const Longitude* const longitude2) const noexcept
 		{
 			return this->getDegrees() < longitude2->getDegrees();
 		}
@@ -109,13 +99,18 @@ namespace GPS
 
 	public:
 
-		Location(const std::string name, const Latitude latitude, const Longitude longitude)
-			:name_(name), latitude_(latitude), longitude_(longitude) {}
-		
+		Location(const std::string name, const Latitude latitude, const Longitude longitude);
 
-		Location(const std::string name);
 
-		double getDistance(const Location* const location2) const
+		Location& operator=(Location other) noexcept
+		{
+
+			//std::swap(*this, other);
+
+			return *this;
+		}
+
+		double getDistance(const Location* const location2) const noexcept
 		{
 			const auto earthRadius{ 6378 }; // kilometers
 			const auto lat1{ this->latitude_.getRadian() };
@@ -128,6 +123,11 @@ namespace GPS
 			const auto haversine{ 2 * earthRadius * asin(sqrt(sinLat * sinLat + cos(lat1) * cos(lat2) * sinLong * sinLong)) };
 
 			return haversine;
+		}
+
+		bool isMaxLong(const Location* const location2) const noexcept
+		{
+			return this->longitude_ < &location2->longitude_;
 		}
 
 	};

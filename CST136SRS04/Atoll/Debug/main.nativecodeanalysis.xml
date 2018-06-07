@@ -4,98 +4,42 @@
     <SFA>
       <FILEPATH>c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\</FILEPATH>
       <FILENAME>gps.h</FILENAME>
-      <LINE>70</LINE>
-      <COLUMN>9</COLUMN>
-    </SFA>
-    <DEFECTCODE>26440</DEFECTCODE>
-    <DESCRIPTION>Function 'GPS::Latitude::getDegree' can be declared 'noexcept' (f.6: http://go.microsoft.com/fwlink/?linkid=853927).</DESCRIPTION>
-    <FUNCTION>GPS::Latitude::getDegree</FUNCTION>
-    <DECORATED>?getDegree@Latitude@GPS@@QBENXZ</DECORATED>
-    <FUNCLINE>70</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\</FILEPATH>
-      <FILENAME>gps.h</FILENAME>
-      <LINE>97</LINE>
-      <COLUMN>6</COLUMN>
+      <LINE>93</LINE>
+      <COLUMN>7</COLUMN>
     </SFA>
     <DEFECTCODE>26429</DEFECTCODE>
     <DESCRIPTION>Symbol 'longitude2' is never tested for nullness, it can be marked as not_null (f.23: http://go.microsoft.com/fwlink/?linkid=853921).</DESCRIPTION>
     <FUNCTION>GPS::Longitude::&lt;</FUNCTION>
-    <DECORATED>??MLongitude@GPS@@QBEHQBV01@@Z</DECORATED>
-    <FUNCLINE>97</FUNCLINE>
+    <DECORATED>??MLongitude@GPS@@QBE_NQBV01@@Z</DECORATED>
+    <FUNCLINE>93</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\</FILEPATH>
       <FILENAME>gps.h</FILENAME>
-      <LINE>97</LINE>
-      <COLUMN>6</COLUMN>
+      <LINE>111</LINE>
+      <COLUMN>12</COLUMN>
     </SFA>
-    <DEFECTCODE>26440</DEFECTCODE>
-    <DESCRIPTION>Function 'GPS::Longitude::operator&lt;' can be declared 'noexcept' (f.6: http://go.microsoft.com/fwlink/?linkid=853927).</DESCRIPTION>
-    <FUNCTION>GPS::Longitude::&lt;</FUNCTION>
-    <DECORATED>??MLongitude@GPS@@QBEHQBV01@@Z</DECORATED>
-    <FUNCLINE>97</FUNCLINE>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class GPS::Location', define or delete them all (c.21: http://go.microsoft.com/fwlink/?linkid=853922).</DESCRIPTION>
+    <FUNCTION>GPS::Location::=</FUNCTION>
+    <DECORATED>??4Location@GPS@@QAEAAV01@V01@@Z</DECORATED>
+    <FUNCLINE>111</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\</FILEPATH>
       <FILENAME>gps.h</FILENAME>
-      <LINE>128</LINE>
+      <LINE>129</LINE>
       <COLUMN>27</COLUMN>
     </SFA>
     <DEFECTCODE>26451</DEFECTCODE>
     <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2: https://go.microsoft.com/fwlink/?linkid=864598).</DESCRIPTION>
     <FUNCTION>GPS::Location::getDistance</FUNCTION>
     <DECORATED>?getDistance@Location@GPS@@QBENQBV12@@Z</DECORATED>
-    <FUNCLINE>118</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\</FILEPATH>
-      <FILENAME>gps.h</FILENAME>
-      <LINE>118</LINE>
-      <COLUMN>9</COLUMN>
-    </SFA>
-    <DEFECTCODE>26440</DEFECTCODE>
-    <DESCRIPTION>Function 'GPS::Location::getDistance' can be declared 'noexcept' (f.6: http://go.microsoft.com/fwlink/?linkid=853927).</DESCRIPTION>
-    <FUNCTION>GPS::Location::getDistance</FUNCTION>
-    <DECORATED>?getDistance@Location@GPS@@QBENQBV12@@Z</DECORATED>
-    <FUNCLINE>118</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\</FILEPATH>
-      <FILENAME>main.cpp</FILENAME>
-      <LINE>13</LINE>
-      <COLUMN>5</COLUMN>
-    </SFA>
-    <DEFECTCODE>26440</DEFECTCODE>
-    <DESCRIPTION>Function 'useVector' can be declared 'noexcept' (f.6: http://go.microsoft.com/fwlink/?linkid=853927).</DESCRIPTION>
-    <FUNCTION>useVector</FUNCTION>
-    <DECORATED>?useVector@@YAXQBV?$array@VLocation@GPS@@$0M@@std@@@Z</DECORATED>
-    <FUNCLINE>13</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\</FILEPATH>
-      <FILENAME>main.cpp</FILENAME>
-      <LINE>132</LINE>
-      <COLUMN>5</COLUMN>
-    </SFA>
-    <DEFECTCODE>26496</DEFECTCODE>
-    <DESCRIPTION>The variable 'test' is assigned only once, mark it as const (con.4: https://go.microsoft.com/fwlink/p/?LinkID=784969).</DESCRIPTION>
-    <FUNCTION>main</FUNCTION>
-    <DECORATED>main</DECORATED>
-    <FUNCLINE>33</FUNCLINE>
+    <FUNCLINE>119</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
 </DEFECTS>

@@ -1,9 +1,8 @@
-﻿  main.cpp
+﻿  GPS.cpp
+  main.cpp
+  Compiling...
+  Generating Code...
   Atoll.vcxproj -> C:\Users\michalsenc\CST136\CST136SRS04\CST136SRS04\Debug\Atoll.exe
-c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\gps.h(70): warning C26440: Function 'GPS::Latitude::getDegree' can be declared 'noexcept' (f.6: http://go.microsoft.com/fwlink/?linkid=853927).
-c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\gps.h(97): warning C26429: Symbol 'longitude2' is never tested for nullness, it can be marked as not_null (f.23: http://go.microsoft.com/fwlink/?linkid=853921).
-c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\gps.h(97): warning C26440: Function 'GPS::Longitude::operator<' can be declared 'noexcept' (f.6: http://go.microsoft.com/fwlink/?linkid=853927).
-c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\gps.h(128): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2: https://go.microsoft.com/fwlink/?linkid=864598).
-c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\gps.h(118): warning C26440: Function 'GPS::Location::getDistance' can be declared 'noexcept' (f.6: http://go.microsoft.com/fwlink/?linkid=853927).
-c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\main.cpp(13): warning C26440: Function 'useVector' can be declared 'noexcept' (f.6: http://go.microsoft.com/fwlink/?linkid=853927).
-c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\main.cpp(132): warning C26496: The variable 'test' is assigned only once, mark it as const (con.4: https://go.microsoft.com/fwlink/p/?LinkID=784969).
+c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\gps.h(93): warning C26429: Symbol 'longitude2' is never tested for nullness, it can be marked as not_null (f.23: http://go.microsoft.com/fwlink/?linkid=853921).
+c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\gps.h(111): warning C26432: If you define or delete any default operation in the type 'class GPS::Location', define or delete them all (c.21: http://go.microsoft.com/fwlink/?linkid=853922).
+c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\gps.h(129): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2: https://go.microsoft.com/fwlink/?linkid=864598).
