@@ -1,8 +1,5 @@
-﻿  GPS.cpp
-  main.cpp
-  Compiling...
-  Generating Code...
+﻿  main.cpp
   Atoll.vcxproj -> C:\Users\michalsenc\CST136\CST136SRS04\CST136SRS04\Debug\Atoll.exe
-c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\gps.h(93): warning C26429: Symbol 'longitude2' is never tested for nullness, it can be marked as not_null (f.23: http://go.microsoft.com/fwlink/?linkid=853921).
-c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\gps.h(111): warning C26432: If you define or delete any default operation in the type 'class GPS::Location', define or delete them all (c.21: http://go.microsoft.com/fwlink/?linkid=853922).
-c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\gps.h(129): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2: https://go.microsoft.com/fwlink/?linkid=864598).
+c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\gps.h(70): warning C26429: Symbol 'longitude2' is never tested for nullness, it can be marked as not_null (f.23: http://go.microsoft.com/fwlink/?linkid=853921).
+c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\gps.h(92): warning C26429: Symbol 'longitude2' is never tested for nullness, it can be marked as not_null (f.23: http://go.microsoft.com/fwlink/?linkid=853921).
+c:\users\michalsenc\cst136\cst136srs04\cst136srs04\atoll\gps.h(119): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2: https://go.microsoft.com/fwlink/?linkid=864598).

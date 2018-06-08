@@ -66,6 +66,11 @@ namespace GPS
 		{
 			return degree * static_cast<int>(cardinal);
 		}
+
+		bool operator <(const Latitude* const longitude2) const noexcept
+		{
+			return this->getDegrees() < longitude2->getDegrees();
+		}
 	};
 
 	class Longitude : public Angle<-180, 180>
@@ -101,15 +106,6 @@ namespace GPS
 
 		Location(const std::string name, const Latitude latitude, const Longitude longitude);
 
-
-		Location& operator=(Location other) noexcept
-		{
-
-			//std::swap(*this, other);
-
-			return *this;
-		}
-
 		double getDistance(const Location* const location2) const noexcept
 		{
 			const auto earthRadius{ 6378 }; // kilometers
@@ -128,6 +124,11 @@ namespace GPS
 		bool isMaxLong(const Location* const location2) const noexcept
 		{
 			return this->longitude_ < &location2->longitude_;
+		}
+
+		bool isMaxLat(const Location* const location2) const noexcept
+		{
+			return this->latitude_ < &location2->latitude_;
 		}
 
 	};
